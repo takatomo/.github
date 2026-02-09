@@ -7,6 +7,13 @@ body:
       value: |
         不具合報告ありがとうございます。再現情報をできるだけ具体的に記入してください。
 
+  - type: input
+    id: parent_issue
+    attributes:
+      label: Parent Issue（任意）
+      description: Parent Issue 配下の不具合修正であれば `#123 タイトル` 形式で記載してください
+      placeholder: "例) #120 認証フロー改善"
+
   - type: textarea
     id: summary
     attributes:
@@ -56,4 +63,3 @@ body:
     attributes:
       label: 補足
       description: スクリーンショットやログなどがあれば記載
-
