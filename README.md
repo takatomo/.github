@@ -10,5 +10,5 @@
 ## 運用方針（Parent-Child）
 
 - 親となる課題は Parent Issue として起票する
-- 実装単位は Child Issue として起票し、Parent Issue の sub-issue に設定する
+- 実装単位は Child Issue として起票し、Parent Issue に紐付ける
 - PR では `Parent Issue: Refs #...` と `Child Issue: Closes #...` を併記する
