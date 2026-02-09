@@ -1,0 +1,59 @@
+name: Bug
+description: 不具合の報告
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        不具合報告ありがとうございます。再現情報をできるだけ具体的に記入してください。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: 何が起きたかを簡潔に記載してください
+      placeholder: 例) ログイン後にダッシュボードが白画面になる
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 手順を番号付きで記載してください
+      placeholder: |
+        1. xxx ページを開く
+        2. yyy をクリックする
+        3. zzz が発生する
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される結果
+      placeholder: 例) 正常にダッシュボードが表示される
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の結果
+      placeholder: 例) 白画面のまま何も表示されない
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 実行環境
+      description: OS/ブラウザ/アプリバージョンなど
+      placeholder: 例) macOS 14.5 / Chrome 124 / app v1.2.3
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足
+      description: スクリーンショットやログなどがあれば記載
+

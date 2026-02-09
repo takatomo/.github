@@ -1,0 +1,46 @@
+name: Feature
+description: 新機能や改善提案
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        機能提案ありがとうございます。背景と価値が分かる形で記載してください。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 解決したい課題
+      description: 現状の困りごとや制約
+      placeholder: 例) 〜が手作業で、毎回時間がかかる
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+      description: どんな仕様・挙動が望ましいか
+      placeholder: 例) 〜の画面に一括更新ボタンを追加する
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 検討した代替案
+      description: あれば記載
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 想定効果
+      description: どんなユーザーにどんな価値があるか
+      placeholder: 例) 作業時間を毎週30分削減できる
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足
+      description: 参考リンク、モック、図など
+

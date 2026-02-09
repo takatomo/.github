@@ -1,0 +1,47 @@
+name: Task
+description: 定常作業・内部タスクの起票
+title: "[Task] "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: 目的
+      description: このタスクで達成したいこと
+      placeholder: 例) リリース前のチェック項目を完了する
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 作業範囲
+      description: 対象と非対象を明確にする
+      placeholder: 例) 対象: API v2, 非対象: 既存v1の仕様変更
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: 実施項目
+      description: 箇条書きで記載
+      placeholder: |
+        - [ ] 項目1
+        - [ ] 項目2
+        - [ ] 項目3
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: 期限
+      description: 必要なら記載
+      placeholder: 例) 2026-02-20
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足
+      description: 関連PR、依存関係、懸念点など
+
