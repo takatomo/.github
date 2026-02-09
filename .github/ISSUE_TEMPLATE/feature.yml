@@ -6,6 +6,7 @@ body:
     attributes:
       value: |
         機能提案ありがとうございます。背景と価値が分かる形で記載してください。
+        このIssueは Parent Issue として扱います。実装は Child Issue を作成し、Parent Issue の sub-issue に設定してください。
 
   - type: textarea
     id: problem
@@ -41,11 +42,11 @@ body:
   - type: textarea
     id: child_tasks
     attributes:
-      label: Child Tasks
-      description: 必要な場合のみ記載してください（`#123 タイトル` 形式）
+      label: Child Issue（sub-issue）候補
+      description: 作成予定の Child Issue を `#123 タイトル` 形式で記載してください
       placeholder: |
-        - [ ] #123 タスクタイトル
-        - [ ] #124 タスクタイトル
+        - [ ] #123 子Issueタイトル
+        - [ ] #124 子Issueタイトル
 
   - type: textarea
     id: notes
