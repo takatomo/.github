@@ -39,8 +39,16 @@ body:
       placeholder: 例) 作業時間を毎週30分削減できる
 
   - type: textarea
+    id: child_tasks
+    attributes:
+      label: 子タスク
+      description: 必要な場合のみ記載してください（`#123 タイトル` 形式）
+      placeholder: |
+        - [ ] #123 タスクタイトル
+        - [ ] #124 タスクタイトル
+
+  - type: textarea
     id: notes
     attributes:
       label: 補足
       description: 参考リンク、モック、図など
-
