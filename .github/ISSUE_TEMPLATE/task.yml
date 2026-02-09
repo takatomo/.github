@@ -5,8 +5,8 @@ body:
   - type: input
     id: parent_task
     attributes:
-      label: 親Task
-      description: 親Taskを `#123 タイトル` 形式で記載してください
+      label: Parent Task
+      description: Parent Taskを `#123 タイトル` 形式で記載してください
       placeholder: "例) #120 認証フロー改善の実装タスク"
     validations:
       required: true

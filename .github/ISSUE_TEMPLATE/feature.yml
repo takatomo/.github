@@ -41,7 +41,7 @@ body:
   - type: textarea
     id: child_tasks
     attributes:
-      label: 子タスク
+      label: Child Tasks
       description: 必要な場合のみ記載してください（`#123 タイトル` 形式）
       placeholder: |
         - [ ] #123 タスクタイトル
