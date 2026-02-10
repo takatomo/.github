@@ -6,6 +6,8 @@ body:
     attributes:
       value: |
         このテンプレートは Child Issue 用です。Issue作成後に Parent Issue に紐付けてください。
+        実装PRでは Child Issue を `Closes #<Child番号>` または `Fixes #<Child番号>` で記載してください。
+        Parent Issue は `Refs #<Parent番号>` で参照し、必要に応じてPR右ペインの Development でもリンクしてください。
   - type: textarea
     id: objective
     attributes:

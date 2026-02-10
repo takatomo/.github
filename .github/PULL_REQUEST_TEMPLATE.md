@@ -33,5 +33,7 @@
 - 
 
 ## 関連Issue
-- Parent Issue: Refs #
-- Child Issue: Closes #
+- Parent Issue（必須）: Refs #<Parent番号>
+- Child Issue（必須・複数可）: Closes #<Child番号> または Fixes #<Child番号>
+- Child Issue 追加分: Closes #<Child番号>
+- Parent Issue を Linked issues に表示したい場合: PR右ペインの Development から手動リンクする
