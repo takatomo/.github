@@ -6,6 +6,8 @@ body:
     attributes:
       value: |
         不具合報告ありがとうございます。再現情報をできるだけ具体的に記入してください。
+        このIssueを単独で修正するPRでは `Closes #<Bug番号>` または `Fixes #<Bug番号>` を使用してください。
+        Parent Issue 配下で対応する場合は Parent Issue を `Refs #<Parent番号>` で参照してください。
 
   - type: input
     id: parent_issue
