@@ -2,15 +2,6 @@ name: Task
 description: 定常作業・内部タスクの起票
 title: "[Task] "
 body:
-  - type: input
-    id: parent_task
-    attributes:
-      label: Parent Task
-      description: Parent Taskを `#123 タイトル` 形式で記載してください
-      placeholder: "例) #120 認証フロー改善の実装タスク"
-    validations:
-      required: true
-
   - type: textarea
     id: objective
     attributes:
