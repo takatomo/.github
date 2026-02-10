@@ -7,6 +7,7 @@ body:
       value: |
         機能提案ありがとうございます。背景と価値が分かる形で記載してください。
         このIssueは Parent Issue として扱います。実装は Child Issue を作成し、Parent Issue に紐付けてください。
+        実装PRでは Parent Issue を `Refs #<Parent番号>` で参照し、Child Issue を `Closes #<Child番号>` または `Fixes #<Child番号>` で記載してください。
 
   - type: textarea
     id: problem
