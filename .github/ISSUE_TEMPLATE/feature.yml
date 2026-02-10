@@ -40,15 +40,6 @@ body:
       placeholder: 例) 作業時間を毎週30分削減できる
 
   - type: textarea
-    id: child_tasks
-    attributes:
-      label: Child Issue
-      description: 作成予定の Child Issue を `#123 タイトル` 形式で記載してください
-      placeholder: |
-        - [ ] #123 子Issueタイトル
-        - [ ] #124 子Issueタイトル
-
-  - type: textarea
     id: notes
     attributes:
       label: 補足

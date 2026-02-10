@@ -6,16 +6,6 @@ body:
     attributes:
       value: |
         このテンプレートは Child Issue 用です。Issue作成後に Parent Issue に紐付けてください。
-
-  - type: input
-    id: parent_task
-    attributes:
-      label: Parent Issue
-      description: 紐付け先の Parent Issue を `#123 タイトル` 形式で記載してください
-      placeholder: "例) #120 認証フロー改善"
-    validations:
-      required: true
-
   - type: textarea
     id: objective
     attributes:
