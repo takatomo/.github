@@ -5,9 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        このテンプレートは Child Issue 用です。Issue作成後に Parent Issue に紐付けてください。
-        実装PRでは Child Issue を `Closes #<Child番号>` または `Fixes #<Child番号>` で記載してください。
-        Parent Issue は `Refs #<Parent番号>` で参照し、必要に応じてPR右ペインの Development でもリンクしてください。
+        定常作業・内部タスクの管理用テンプレートです。
+        実装PRでは、関連Issueがある場合に `Refs #<issue番号>` または `Closes #<issue番号>` を記載してください。
   - type: textarea
     id: objective
     attributes:
@@ -29,7 +28,7 @@ body:
   - type: textarea
     id: todo
     attributes:
-      label: 実施項目（子Issue）
+      label: 実施項目
       description: 箇条書きで記載
       placeholder: |
         - [ ] 項目1
@@ -38,11 +37,22 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: done_definition
+    attributes:
+      label: 完了条件
+      description: 完了と判断する条件を記載
+      placeholder: |
+        - [ ] 条件1
+        - [ ] 条件2
+    validations:
+      required: true
+
   - type: input
     id: deadline
     attributes:
       label: 期限
-      description: 必要なら記載
+      description: 必要に応じて記載してください
       placeholder: "例) 2026-02-20"
 
   - type: textarea

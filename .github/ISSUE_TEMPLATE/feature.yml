@@ -5,9 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        機能提案ありがとうございます。背景と価値が分かる形で記載してください。
-        このIssueは Parent Issue として扱います。実装は Child Issue を作成し、Parent Issue に紐付けてください。
-        実装PRでは Parent Issue を `Refs #<Parent番号>` で参照し、Child Issue を `Closes #<Child番号>` または `Fixes #<Child番号>` で記載してください。
+        機能提案ありがとうございます。背景と価値が分かるように記載してください。
+        実装PRでは、関連Issueがある場合に `Refs #<issue番号>` または `Closes #<issue番号>` を記載してください。
 
   - type: textarea
     id: problem
@@ -28,16 +27,36 @@ body:
       required: true
 
   - type: textarea
+    id: scope
+    attributes:
+      label: 対象範囲
+      description: 対象と非対象を明確にしてください
+      placeholder: 例) 対象: ダッシュボード画面 / 非対象: API仕様変更
+    validations:
+      required: true
+
+  - type: textarea
     id: alternatives
     attributes:
       label: 検討した代替案
-      description: あれば記載
+      description: 必要に応じて記載してください
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件
+      description: このIssueが完了したと判断できる条件
+      placeholder: |
+        - [ ] 条件1
+        - [ ] 条件2
+    validations:
+      required: true
 
   - type: textarea
     id: impact
     attributes:
       label: 想定効果
-      description: どんなユーザーにどんな価値があるか
+      description: どのユーザーにどのような価値があるかを記載してください
       placeholder: 例) 作業時間を毎週30分削減できる
 
   - type: textarea

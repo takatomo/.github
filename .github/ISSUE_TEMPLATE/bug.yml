@@ -6,15 +6,7 @@ body:
     attributes:
       value: |
         不具合報告ありがとうございます。再現情報をできるだけ具体的に記入してください。
-        このIssueを単独で修正するPRでは `Closes #<Bug番号>` または `Fixes #<Bug番号>` を使用してください。
-        Parent Issue 配下で対応する場合は Parent Issue を `Refs #<Parent番号>` で参照してください。
-
-  - type: input
-    id: parent_issue
-    attributes:
-      label: Parent Issue（任意）
-      description: Parent Issue 配下の不具合修正であれば `#123 タイトル` 形式で記載してください
-      placeholder: "例) #120 認証フロー改善"
+        修正PRでは、関連Issueがある場合に `Refs #<issue番号>` または `Closes #<issue番号>` を記載してください。
 
   - type: textarea
     id: summary
@@ -59,6 +51,18 @@ body:
       label: 実行環境
       description: OS/ブラウザ/アプリバージョンなど
       placeholder: 例) macOS 14.5 / Chrome 124 / app v1.2.3
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 重大度
+      options:
+        - 低（軽微な不具合）
+        - 中（回避策あり）
+        - 高（回避策なし）
+        - 致命的（サービス利用不可）
+    validations:
+      required: true
 
   - type: textarea
     id: notes
