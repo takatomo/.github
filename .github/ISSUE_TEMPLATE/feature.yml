@@ -31,7 +31,7 @@ body:
     attributes:
       label: 対象範囲
       description: 対象と非対象を明確にしてください
-      placeholder: 例) 対象: ダッシュボード画面 / 非対象: API仕様変更
+      placeholder: "例) 対象: ダッシュボード画面 / 非対象: API仕様変更"
     validations:
       required: true
 
